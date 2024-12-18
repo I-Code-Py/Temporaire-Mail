@@ -15,15 +15,15 @@ Pour commencer, nous copions le GIT
 
    **Debian/Ubuntu : (Sans Python)**
    ```bash
-   sudo apt update && upgrade
-   sudo apt install python3
-   pip install -r requirements.txt
-```
+      sudo apt update && upgrade
+      sudo apt install python3
+      pip install -r requirements.txt
+   ```
 
   **Fedora : (Sans Python)**
    ```bash
-   sudo dnf install python3 python3-pip
-   pip install -r requirements.txt
+      sudo dnf install python3 python3-pip
+      pip install -r requirements.txt
    ```
 
   **Arch Linux : (Sans Python)**
@@ -43,6 +43,6 @@ Pour commencer, nous copions le GIT
 
    ```bash
    pip install -r requirements.txt
-
+```
 
 Ensuite lancer le fichier : `scirpt.py`
