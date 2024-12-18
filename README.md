@@ -14,11 +14,12 @@ Pour commencer, nous copions le GIT
    Pour installer Python, exécutez les commandes suivantes selon votre distribution :
 
    **Debian/Ubuntu : (Sans Python)**
-   `
+   ```bash
    sudo apt update && upgrade
    sudo apt install python3
    pip install -r requirements.txt
-` 
+```
+
   **Fedora : (Sans Python)**
    ```bash
    sudo dnf install python3 python3-pip
@@ -38,17 +39,17 @@ Pour commencer, nous copions le GIT
    Pour installer Python, exécutez les commandes suivantes :
 
    ```bash
-### Sur Windows
 
-1. **Installer les dépendances**  
+2. **Installer les dépendances**  
    Installez les dépendances nécessaires avec `pip` dans l'invite de commande (CMD) ou PowerShell :
 
    ```bash
    pip install -r requirements.txt
-
+```
 
 ---
 
 Ensuite lancer le fichier :
  ```bash
 scirpt.py
+```
