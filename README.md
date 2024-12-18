@@ -36,18 +36,13 @@ Pour commencer, nous copions le GIT
 
 1. **Installer Python**  
    Pour faire fonctionner le programme, vous devez avoir [Python](https://www.python.org/downloads/) installé sur votre machine ainsi que la bibliothèque `python-dotenv`.  
-   Pour installer Python, exécutez les commandes suivantes :
-
-   ```bash
+   Pour installer Python [aller sur le lien ICI](https://www.python.org/downloads/)
 
 2. **Installer les dépendances**  
    Installez les dépendances nécessaires avec `pip` dans l'invite de commande (CMD) ou PowerShell :
 
    ```bash
    pip install -r requirements.txt
-`
 
-Ensuite lancer le fichier :
- ```bash
-scirpt.py
-```
+
+Ensuite lancer le fichier : `scirpt.py`
