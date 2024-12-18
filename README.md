@@ -5,8 +5,7 @@ Système automatisé pour un service de boîte email temporaire (ou permanente) 
 ## Installation
 
 Pour commencer, nous copions le GIT
-   ```bash
-      git clone https://github.com/votre-utilisateur/temporaire-mail.git
+   `git clone https://github.com/votre-utilisateur/temporaire-mail.git`
 
 ### Sur Linux
 
@@ -42,6 +41,7 @@ Pour commencer, nous copions le GIT
 
 1. **Installer les dépendances**  
    Installez les dépendances nécessaires avec `pip` dans l'invite de commande (CMD) ou PowerShell :
+
    ```bash
    pip install -r requirements.txt
 
