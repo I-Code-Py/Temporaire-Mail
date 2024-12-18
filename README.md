@@ -1,5 +1,6 @@
 # Temporaire-Mail
-
+> [!WARNING]
+> Le projet n'est pas fini et la dernière version du programme est sur mon PC en local. Je l'uploaderai quand elle aura passé mes vérifications.
 Système automatisé pour un service de boîte email temporaire (ou permanente) fonctionnant avec des domaines personnalisés. Le code a été produit en utilisant l'API de IONOS, mais il est également possible d'utiliser un autre fournisseur.
 
 ## Installation
