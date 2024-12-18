@@ -10,9 +10,17 @@ def save_to_env():
     smtp_port = smtp_port_entry.get()
     smtp_user = smtp_user_entry.get()
     smtp_password = smtp_password_entry.get()
+    sender_email = sender_entry.get()
+    recipient_email = recipient_entry.get()
+    subject = subject_entry.get()
+    message_body = message_text.get("1.0", "end-1c")
 
     if not smtp_server or not smtp_port or not smtp_user or not smtp_password:
         messagebox.showerror("Erreur", "Tous les champs SMTP doivent être remplis !")
+        return
+
+    if not sender_email or not recipient_email or not subject or not message_body:
+        messagebox.showerror("Erreur", "Tous les champs e-mail doivent être remplis !")
         return
 
     with open(".env", "w") as env_file:
@@ -20,19 +28,14 @@ def save_to_env():
         env_file.write(f"SMTP_PORT={smtp_port}\n")
         env_file.write(f"SMTP_USER={smtp_user}\n")
         env_file.write(f"SMTP_PASSWORD={smtp_password}\n")
+        env_file.write(f"SENDER_EMAIL={sender_email}\n")
+        env_file.write(f"RECIPIENT_EMAIL={recipient_email}\n")
+        env_file.write(f"SUBJECT={subject}\n")
+        env_file.write(f"MESSAGE_BODY={message_body}\n")
 
     messagebox.showinfo("Succès", "Configuration sauvegardée dans .env")
 
 def send_email():
-    sender_email = sender_entry.get()
-    recipient_email = recipient_entry.get()
-    subject = subject_entry.get()
-    message_body = message_text.get("1.0", "end-1c")
-
-    if not sender_email or not recipient_email or not subject or not message_body:
-        messagebox.showerror("Erreur", "Tous les champs doivent être remplis !")
-        return
-
     try:
         # Charger les variables d'environnement
         load_dotenv()
@@ -40,6 +43,10 @@ def send_email():
         smtp_port = int(os.getenv("SMTP_PORT"))
         smtp_user = os.getenv("SMTP_USER")
         smtp_password = os.getenv("SMTP_PASSWORD")
+        sender_email = os.getenv("SENDER_EMAIL")
+        recipient_email = os.getenv("RECIPIENT_EMAIL")
+        subject = os.getenv("SUBJECT")
+        message_body = os.getenv("MESSAGE_BODY")
 
         # Préparation du message
         message = MIMEMultipart()
@@ -62,7 +69,7 @@ def send_email():
 # Interface graphique
 app = Tk()
 app.title("Service de Messagerie")
-app.geometry("400x500")
+app.geometry("400x600")
 
 Label(app, text="Serveur SMTP :").pack(pady=5)
 smtp_server_entry = Entry(app, width=50)
