@@ -45,9 +45,7 @@ Pour commencer, nous copions le GIT
 
    ```bash
    pip install -r requirements.txt
-```
-
----
+`
 
 Ensuite lancer le fichier :
  ```bash
