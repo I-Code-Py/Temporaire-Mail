@@ -14,11 +14,11 @@ Pour commencer, nous copions le GIT
    Pour installer Python, exécutez les commandes suivantes selon votre distribution :
 
    **Debian/Ubuntu : (Sans Python)**
-   ```bash
+   `
    sudo apt update && upgrade
    sudo apt install python3
    pip install -r requirements.txt
-
+` 
   **Fedora : (Sans Python)**
    ```bash
    sudo dnf install python3 python3-pip
