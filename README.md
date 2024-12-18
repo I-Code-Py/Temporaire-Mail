@@ -23,12 +23,13 @@ Pour commencer, nous copions le GIT
    ```bash
    sudo dnf install python3 python3-pip
    pip install -r requirements.txt
+   ```
 
   **Arch Linux : (Sans Python)**
    ```bash
       sudo pacman -S python python-pip
       pip install -r requirements.txt
-
+```
 
 ### Sur Windows
 
